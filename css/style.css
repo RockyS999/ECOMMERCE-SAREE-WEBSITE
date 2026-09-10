@@ -1,4 +1,3 @@
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -272,8 +271,8 @@ div.saries {
 
 .model {
   position: absolute;
-  width: 16.68%;   
-  height: 61.3%;   
+  width: 16.68%;
+  height: 61.3%;
   top: 0.22%;
   object-fit: contain;
   z-index: 2;
@@ -281,10 +280,10 @@ div.saries {
 
 .framed-image {
   position: absolute;
-  left: 39.16%;      
-  top: 27.8%;         
-  width: 22.7%;   
-  height: 71.9%;      
+  left: 39.16%;
+  top: 27.8%;
+  width: 22.7%;
+  height: 71.9%;
   z-index: 3;
 }
 
@@ -299,13 +298,13 @@ div.saries {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -6%;              
-  width: 100%;              
+  bottom: -6%;
+  width: 100%;
   font-family: "Playfair Display", serif;
   font-size: clamp(3.5rem, 10vw, 7rem);
   font-weight: 700;
   color: #000;
-  z-index: 1;              
+  z-index: 1;
   text-align: center;
   margin: 0;
   letter-spacing: 0.02em;
@@ -465,35 +464,29 @@ div.saries {
     font-size: 1.8rem;
   }
 }
-
-
-.marquee-section {
-  background-color: #441C5A;
-  overflow: hidden;      
-  padding: 20px 0;
-  width: 100%;
-}
-
-.marquee-track {
-  display: flex;
-  align-items: center;
+.title-bar {
+  position: relative;
+  background-color: #150243; 
+  overflow: hidden;
   white-space: nowrap;
-  width: max-content;    
-  animation: scroll-left 25s linear infinite;  
+  padding:10px;
 }
 
-.marquee-item {
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0 20px;
-  letter-spacing: 0.5px;
+.title-track {
+  display:flex;
+  list-style: none;
+  animation: scroll-ticker 10s linear infinite;
 }
 
-.marquee-item.brand {
-  font-size: 1.5rem;
-  font-weight: 700;
-  font-family: "Playfair Display", serif;
+.title-track li {
+  color: #f7f1f1;
+  font-size:30px;
+  padding: 0 40px;
+}
+
+@keyframes scroll-ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .image-box .media {
